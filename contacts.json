@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "firstName": "Hans",
+    "lastName": "Aguilar",
+    "email": "HansAguilar@email.com",
+    "favoriteColor": "Yellow",
+    "birthday": "12/16/90"
+  },
+  "contact2": {
+    "firstName": "Edward",
+    "lastName": "Santos",
+    "email": "Edward@email.com",
+    "favoriteColor": "Purple",
+    "birthday": "014/08/01"
+  },
+  "contact3": {
+    "firstName": "Yuka",
+    "lastName": "Fujii",
+    "email": "yukaF@email.com",
+    "favoriteColor": "Pink",
+    "birthday": "08/22/97"
+  }
+}
