@@ -53,7 +53,7 @@ POST https://cse341-lesson03.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-   "firstName": "Yuka",
+   "firstName": "Yoko",
     "lastName": "Fujii",
     "email": "yukaF@email.com",
     "favoriteColor": "Pink",
