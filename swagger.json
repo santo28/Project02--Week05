@@ -40,16 +40,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "title": {
                   "example": "any"
                 },
-                "lastName": {
+                "location": {
                   "example": "any"
                 },
-                "email": {
+                "date": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "time": {
                   "example": "any"
                 }
               }
@@ -62,6 +62,27 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/events/{id}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }

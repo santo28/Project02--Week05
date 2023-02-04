@@ -5,15 +5,14 @@ GET http://localhost:8080/events
 GET http://localhost:8080/events/63de04a40bba6ab206b49d20
 
 ### Create contact 
-POST http://localhost:8080/contacts HTTP/1.1 
+POST http://localhost:8080/events HTTP/1.1 
 content-type: application/json
 
 {
-"firstName":"Jose", 
-"lastName":"Aquino", 
-"email":"Jaquino@test.com", 
-"favoriteColor":"Green", 
-"birthday":"08/22/1998"
+    "title": "Country Dance",
+    "location":"Idaho Falls",
+    "date":"09/10/2023",
+    "time":"5:30 PM"
 }
 // *******************************************  in the following weeks I'll add them *************************************// 
 # ### Get contact by id 
