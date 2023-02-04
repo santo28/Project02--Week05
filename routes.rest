@@ -32,12 +32,12 @@ content-type: application/json
 
 ### Deployment 
 ### Get all contacts
-GET https://project02-w05.onrender.com/events
+GET https://project2-w5.onrender.com/events
 
 ### Get by id
-GET https://project02-w05.onrender.com/events/63de04a40bba6ab206b49d1f
+GET https://project2-w5.onrender.com/events/63de04a40bba6ab206b49d1f
 ###Create a Post
-POST https://cse341-lesson03.onrender.com/contacts HTTP/1.1 
+POST https://project2-w5.onrender.com/events HTTP/1.1 
 content-type: application/json
 
 {
