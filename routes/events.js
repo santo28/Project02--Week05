@@ -5,7 +5,7 @@ const eventsController = require('../controllers/events');
 
 router.get('/', eventsController.getAll);
 
-// router.get('/:id', contactsController.getSingle);
+router.get('/:id', eventsController.getSingle);
 
 router.post('/', eventsController.createEvent);
 

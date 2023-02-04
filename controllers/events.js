@@ -9,14 +9,14 @@ const getAll = async (req, res) => {
   });
 };
 
-// const getSingle = async (req, res) => {
-//   const userId = new ObjectId(req.params.id);
-//   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
-//   result.toArray().then((lists) => {
-//     res.setHeader('Content-Type', 'application/json');
-//     res.status(200).json(lists[0]);
-//   });
-// };
+const getSingle = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb.getDb().db().collection('events').find({ _id: userId });
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists[0]);
+  });
+};
 
 const createEvent = async (req, res) => {
   const event = {
@@ -69,7 +69,7 @@ const createEvent = async (req, res) => {
 
 module.exports = {
   getAll,
-  // getSingle,
+   getSingle,
   createEvent,
   // updateContact,
   // deleteContact

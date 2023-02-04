@@ -1,6 +1,9 @@
 # ### LOCALHOST
 GET http://localhost:8080/events
 
+### Get by ID localhost
+GET http://localhost:8080/events/63de04a40bba6ab206b49d20
+
 ### Create contact 
 POST http://localhost:8080/contacts HTTP/1.1 
 content-type: application/json
