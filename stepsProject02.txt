@@ -1,2 +1,29 @@
 1. Choose A project
-2.  
+2.  Routes used for documentation project week 04 
+
+### Post second contact Yuka
+POST https://cse341-lesson03.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+   "firstName": "Yoko",
+    "lastName": "Fujii",
+    "email": "yukaF@email.com",
+    "favoriteColor": "Pink",
+    "birthday": "08/22/97"
+}
+
+###Put Request(Update)
+PUT https://cse341-lesson03.onrender.com/contacts/63c4e4ad933d9d4fdb660309 HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName": "Aiki",
+    "lastName": "Fujii",
+    "email": "yukaF@email.com",
+    "favoriteColor": "Pink",
+    "birthday": "08/22/97"
+}
+
+### Delete Contact
+DELETE https://cse341-lesson03.onrender.com/contacts/63cc6177192895692ea9df80 HTTP/1.1
