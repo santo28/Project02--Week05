@@ -20,16 +20,16 @@ const getAll = async (req, res) => {
 
 const createEvent = async (req, res) => {
   const event = {
-    title: req.body.firstName,
-    location: req.body.lastName,
-    date: req.body.email,
-    time: req.body.favoriteColor,
+    title: req.body.title,
+    location: req.body.location,
+    date: req.body.date,
+    time: req.body.time,
   };
   const response = await mongodb.getDb().db().collection('events').insertOne(event);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(500).json(response.error || 'Some error occurred while creating the Event.');
   }
 };
 

@@ -41,9 +41,8 @@ POST https://project2-w5.onrender.com/events HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Mason", 
-    "lastName":"Simkins", 
-    "email":"Mason@test.com", 
-    "favoriteColor":"Blue", 
-    "birthday":"08/22/1999"
+    "title": "Country Dance",
+    "location":"Idaho Falls",
+    "date":"09/10/2023",
+    "time":"5:30 PM"
 }
