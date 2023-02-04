@@ -1,0 +1,20 @@
+{
+  "event1": {
+    "title": "Latin Dance",
+    "location": "Rexburg",
+    "date": "02/16/2023",
+    "time": "11 PM"
+  },
+  "event2": {
+    "title": "Salsa Bachata Social",
+    "location":"Salt Lake City",
+    "date": "02/10/2023",
+    "time":"10:30 PM"
+  },
+  "event3": {
+    "title": "Giodanceworld Ballroom",
+    "location":"Pleasent Grove",
+    "date":"02/11/2023",
+    "time":"9:30 PM"
+  }
+}
