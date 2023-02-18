@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const eventsController = require('../controllers/events');
-const validator = require('../helpers/validate');
+const validation = require('../middleware/validate');
 
 router.get('/', eventsController.getAll);
 
