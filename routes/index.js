@@ -2,8 +2,8 @@ const { auth } = require('express-openid-connect');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const express = require('express');
-const router = express.Router();
+// const express = require('express');
+// const router = express.Router();
 
 
 const config = {
