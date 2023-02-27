@@ -1,5 +1,5 @@
 # ### LOCALHOST
-GET http://localhost:8080/events
+GET http://localhost:8080/login
 
 ### Get by ID localhost
 GET http://localhost:8080/events/63de04a40bba6ab206b49d20

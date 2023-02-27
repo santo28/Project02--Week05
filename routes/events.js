@@ -4,6 +4,7 @@ const router = express.Router();
 const eventsController = require('../controllers/events');
 const validation = require('../middleware/validate');
 
+
 router.get('/', eventsController.getAll);
 
 router.get('/:id', eventsController.getSingle);
