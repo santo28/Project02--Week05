@@ -1,18 +1,19 @@
+const app = express();
 const { auth } = require('express-openid-connect');
 const dotenv = require('dotenv');
 dotenv.config();
 
-// const express = require('express');
-// const router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 
 const config = {
     authRequired: false,
     auth0Logout: true,
-    secret: 'a long, randomly-generated string stored in env',
-    baseURL: 'http://localhost:8080',
-    clientID: 'iuecxmNfUWyTGKHJEHAqfJgnNk9b400o',
-    issuerBaseURL: 'https://dev-eu22xgs0ml2ko37u.us.auth0.com'
+    secret: process.env.SECRET,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
   };
 
 
