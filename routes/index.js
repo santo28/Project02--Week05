@@ -1,9 +1,9 @@
+const express = require('express');
 const app = express();
 const { auth } = require('express-openid-connect');
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
 
-const express = require('express');
+// const express = require('express');
 const router = express.Router();
 
 
