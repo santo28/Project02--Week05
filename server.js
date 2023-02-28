@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const cors = require('cors');
 const { auth } = require('express-openid-connect');
+const { requiresAuth } = require('express-openid-connect');
 require('dotenv').config();
 
 const port = process.env.PORT;
@@ -37,6 +38,12 @@ app.use(auth(config));
 app.get('/', (req, res) => {
 res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
+
+
+app.get('/profile', requiresAuth(), (req, res) => {
+  res.send(JSON.stringify(req.oidc.user));
+});
+
 
 mongodb.initDb((err) => {
   if (err) {
