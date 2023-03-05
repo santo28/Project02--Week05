@@ -3,18 +3,37 @@
     "title": "Latin Dance",
     "location": "Rexburg",
     "date": "02/16/2023",
-    "time": "11 PM"
-  },
+    "time": "11 PM",
+    "price": "15$",
+    "Capacity of People": "500",
+    "Rating": "4 Stars"
+
+    
+
+
+  }, 
   "event2": {
     "title": "Salsa Bachata Social",
     "location":"Salt Lake City",
     "date": "02/10/2023",
-    "time":"10:30 PM"
+    "time":"10:30 PM",
+    "price": "12$",
+    "Capacity of People": "300",
+    "Rating": "3.5 Stars"
+
+
+
   },
   "event3": {
     "title": "Giodanceworld Ballroom",
     "location":"Pleasent Grove",
     "date":"02/11/2023",
-    "time":"9:30 PM"
+    "time":"9:30 PM",
+    "price": "20$",
+    "Capacity of People": "250",
+    "Rating": "5 Stars"
+
+    
+
   }
 }
